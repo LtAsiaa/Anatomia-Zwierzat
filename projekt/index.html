@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Anatomia Zwierząt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+ <!--Pasek górny--> 
+<div class="pasek_gorny" id="Pasek">
+    <a href="Projekt.html">Projekt Prototypu</a>
+    <a href="Wizualizacja.html">Wizualizacja</a>
+    <a href="Strona_glowna.html" >Strona Główna</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i> </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Pasek");
+  if (x.className === "pasek_gorny") {
+    x.className += " responsive";
+  } else {
+    x.className = "pasek_gorny";
+  }
+}
+</script>
+<!--Pasek boczny-->
+<div class="pasek_boczny">
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  <h3> <b>Strona Główna</b></h3>
+</a>
+</div>
+
+<!--Treść-->
+<div class="content">
+    <h1> Anatomia Zwierząt </h1>
+    <h3>Aplikacja ta jest częścią pracy inżynierskiej. Na obecną chwilę na stronie znajduję sie
+      budowa szkieletu kota, jednak projekt ten będzie cały czas rozwijany. Projekt 
+      w przyszłości zostanie rozbudowany, o modele innych zwierząt. Modele nie tylko szkieletów,
+      ale także układów <br>i narządów wewnętrznych.
+    </h3>
+      <div class="button">
+        <a href="Wizualizacja.html">
+          <h2>Anatomia kota</h2></a>
+      </div>
+      <br><br>
+      <div class="button">
+          <a href="">
+            <h2>Anatomia psa</h2></a>
+        </div>
+        <br><br>
+        <div class="button">
+            <a href="">
+              <h2>Anatomia myszy</h2></a>
+          </div>
+      
+</div>
+
+</body>
+</html>
