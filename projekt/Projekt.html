@@ -98,7 +98,7 @@ function myFunction() {
           } );
 
           var loader = new STLLoader();
-          loader.load( './models/calosc.stl', function ( geometry ) {
+          loader.load( './models/calosc.STL', function ( geometry ) {
   
             var material = new THREE.MeshPhongMaterial( { color: 0xb87333, specular: 0x111111, shininess: 200 } );
             var mesh = new THREE.Mesh( geometry, material );
