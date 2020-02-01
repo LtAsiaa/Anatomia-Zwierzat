@@ -62,8 +62,8 @@ function myFunction() {
   
           renderer = new THREE.WebGLRenderer( { antialias: true });
           renderer.setPixelRatio( window.devicePixelRatio );
-          renderer.setSize(window.innerWidth,window.innerHeight);
-          //renderer.setSize( 1000, 600 );
+          //renderer.setSize(window.innerWidth,window.innerHeight);
+          renderer.setSize( 1000, 600 );
           document.body.appendChild( renderer.domElement );
 
           camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 1000 );
@@ -98,7 +98,7 @@ function myFunction() {
           } );
 
           var loader = new STLLoader();
-          loader.load( './models/calosc.STL', function ( geometry ) {
+          loader.load( './models/calosc.stl', function ( geometry ) {
   
             var material = new THREE.MeshPhongMaterial( { color: 0xb87333, specular: 0x111111, shininess: 200 } );
             var mesh = new THREE.Mesh( geometry, material );
