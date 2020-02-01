@@ -69,8 +69,8 @@ function myFunction() {
   
           renderer = new THREE.WebGLRenderer( { antialias: true });
           renderer.setPixelRatio( window.devicePixelRatio );
-          renderer.setSize(window.innerWidth,window.innerHeight);
-	  //renderer.setSize( 1000, 600 );
+          //renderer.setSize(window.innerWidth,window.innerHeight);
+	  renderer.setSize( 1000, 600 );
           document.body.appendChild( renderer.domElement );
          
           camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 1000 );
